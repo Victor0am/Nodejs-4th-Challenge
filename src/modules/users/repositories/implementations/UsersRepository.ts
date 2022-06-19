@@ -22,7 +22,7 @@ class UsersRepository implements IUsersRepository {
         // Complete aqui
         const user = new User();
 
-        Object.apply(user, {
+        Object.assign(user, {
             name,
             email,
             created_at: new Date(),
